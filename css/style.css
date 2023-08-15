@@ -104,6 +104,30 @@ img {
   color: white;
 }
 
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  #menu-toggle:checked + .menu {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 0;
+    text-align: center;
+  }
+}
 
 /* Footer */
 footer {

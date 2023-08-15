@@ -1,0 +1,144 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 80%;
+  margin: auto;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  background-color: #ededed;
+}
+
+/* Headings font using serif */
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  color: #7c2d79;
+}
+
+p {
+  color: #333;
+}
+
+button {
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Card Grid */
+/* Card Grid */
+.content-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; /* Align items to the start of the row */
+}
+
+.card {
+  width: calc(25% - 10px); /* 4 columns for desktop */
+  margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 992px) {
+  .card {
+    width: calc(33.33% - 10px); /* 3 columns for tablet */
+  }
+}
+
+@media (max-width: 768px) {
+  .content-section {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
+
+/* Navigation and Menu */
+.navigation {
+  background-color: #7c2d79;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: white;
+}
+
+
+/* Footer */
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  border-radius: 80%;
+  text-align: center;
+  text-decoration: none;
+  margin: 35px;
+}
+
+.fa:hover {
+  background: white;
+  color: #7c2d79;
+}
+
+/* Social Icons */
+.fa-facebook {
+  background: #7c2d79;
+  color: white;
+}
+
+.fa-twitter {
+  background: #7c2d79;
+  color: white;
+}
+
+.fa-instagram {
+  background: #7c2d79;
+  color: white;
+}
